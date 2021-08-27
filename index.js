@@ -10,7 +10,7 @@ function submitData(name, email) {
     return fetch(url, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json',
-        Accept: "application/json", },
+        accept: "application/json", },
         body:JSON.stringify(obj)
     })
     .then(Response  => Response.json())
